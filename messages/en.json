@@ -1,0 +1,227 @@
+{
+	"Hero": {
+		"title": {
+			"part1": "Technological solutions for",
+			"highlight": "business scaling"
+		},
+		"description": "Perfect for companies ready to grow, we update and modernize websites and applications, integrate AI tools and services, automate processes.",
+		"buttons": {
+			"submitRequest": "Submit Request"
+		},
+		"partners": "Our partners:"
+	},
+	"About": {
+		"title": "About Us",
+		"description": "We are a team of experts helping companies grow through technology, design, and strategy. Combining experience in development, marketing, and UX.",
+		"completed_projects": {
+			"title": "Completed Projects",
+			"count": "70",
+			"suffix": "+",
+			"icon_alt": "icon for completed projects",
+			"image_alt": "image for completed projects"
+		},
+		"automated_tasks": {
+			"title": "Automated Business Tasks",
+			"count": "118",
+			"suffix": "+",
+			"icon_alt": "icon for automated tasks",
+			"image_alt": "image for automated tasks"
+		},
+		"efficiency_increase": {
+			"title": "Efficiency Improvement",
+			"count": "15",
+			"suffix": "X",
+			"icon_alt": "icon for efficiency increase",
+			"image_alt": "image for efficiency increase"
+		},
+		"conversion_improvement": {
+			"title": "Conversion Improvement",
+			"count": "+37",
+			"suffix": "%",
+			"icon_alt": "icon for conversion improvement",
+			"image_alt": "image for conversion improvement"
+		}
+	},
+	"OurServices": {
+		"title": "Our Services",
+		"subtitle": {
+			"before": "Comprehensive solutions",
+			"highlight": "for your business"
+		},
+		"service1": {
+			"title": "Product Management",
+			"description": "We analyze goals, develop strategy, create the product structure, and control implementation at every stage.",
+			"alt": "product management image"
+		},
+		"service2": {
+			"title": "Web Development",
+			"description": "Turnkey website development: landing pages, corporate sites, and complex platforms — from prototype to release.",
+			"alt": "web development image"
+		},
+		"service3": {
+			"title": "Marketing",
+			"description": "We set up hosting, domains, SSL, and ensure uninterrupted operation and technical support for your project.",
+			"alt": "marketing image"
+		},
+		"list": {
+			"0": "Technical support",
+			"1": "Hosting and domains",
+			"2": "AI solutions",
+			"3": "UI/UX Design",
+			"4": "Automation planning",
+			"5": "Service integration"
+		}
+	},
+	"HowItWork": {
+		"title": "How It Works",
+		"subtitle": {
+			"before": "Implementation process",
+			"highlight": "from idea to launch"
+		},
+		"step1": {
+			"step": "step 01",
+			"title": "Planning & Strategy",
+			"description": "Identifying needs, planning, and accurately developing the technical specification.",
+			"icon_alt": "planning icon"
+		},
+		"step2": {
+			"step": "step 02",
+			"title": "UX/UI Design & Analytics",
+			"description": "Creating wireframes and prototypes, with detailed content development.",
+			"icon_alt": "design icon"
+		},
+		"step3": {
+			"step": "step 03",
+			"title": "Development & Integration",
+			"description": "Frontend and backend development, service integration.",
+			"icon_alt": "development icon"
+		},
+		"step4": {
+			"step": "step 04",
+			"title": "Deployment & Support",
+			"description": "Setting up hosting, optimizing performance, and maintaining infrastructure.",
+			"icon_alt": "support icon"
+		},
+		"footer": {
+			"text": "We help businesses design, build, and launch modern solutions that deliver real results.",
+			"link": "Contact us"
+		}
+	},
+	"Facts": {
+		"title": "Facts About Us",
+		"subtitle": {
+			"before": "Why companies choose",
+			"highlight": "to work with us"
+		},
+		"item1": {
+			"title": "Technical Expertise",
+			"subtext": "Years on the global market",
+			"description": "Our team has deep experience in website, app, and system development."
+		},
+		"item2": {
+			"title": "Strong Team",
+			"subtext": "Employees in the studio",
+			"description": "Our team includes specialists from diverse industries and fields."
+		},
+		"item3": {
+			"title": "Result-Oriented",
+			"subtext": "Satisfied clients",
+			"description": "Happy clients, successful projects, and strong partnerships — our reputation speaks for itself."
+		},
+		"footer": {
+			"free": "Free ",
+			"text": "First consultation is on us.",
+			"link": "Contact us now"
+		}
+	},
+	"CtaBox": {
+		"subtitle": "the time is now",
+		"title": {
+			"before": "Ready to build smart, fast, and more",
+			"highlight": "modern applications?"
+		},
+		"description": "Contact us right now! Let's discuss your project and offer a solution.",
+		"btnPrimary": "Submit a request"
+	},
+	"Review": {
+		"title": "reviews",
+		"subtitle": {
+			"before": "What clients say about the work of",
+			"highlight": "INOTECH studio"
+		},
+		"description": "We create smart AI interfaces — faster, more accurate, more personal.",
+		"counters": {
+			"joy": "Bursts of joy",
+			"smiles": "Client smiles"
+		}
+	},
+	"Form": {
+		"leaveRequest": "Leave a request",
+		"placeholders": {
+			"fname": "Your Name",
+			"email": "Email",
+			"phone": "Phone Number",
+			"message": "Your message (optional)"
+		},
+		"buttons": {
+			"submit": "Send"
+		},
+		"errors": {
+			"fnameRequired": "Please enter your name",
+			"emailRequired": "Please enter your email",
+			"emailInvalid": "Invalid email",
+			"phoneRequired": "Please enter your phone number"
+		},
+		"status": {
+			"sending": "Sending...",
+			"success": "Thank you! Your request has been sent."
+		}
+	},
+	"FAQ": {
+		"title": "faq's",
+		"subtitlePart1": "Frequently Asked",
+		"subtitlePart2": "Questions",
+		"askQuestion": "Ask a question",
+		"questions": {
+			"1": {
+				"question": "1. How does the client make payment?",
+				"answer": "The project is divided into clear sections. Payment is made step-by-step after each block is reviewed and approved."
+			},
+			"2": {
+				"question": "2. What are the order deadlines?",
+				"answer": "Deadlines are determined individually, considering your needs, volumes, and priorities."
+			},
+			"3": {
+				"question": "3. Is there a fee for revisions?",
+				"answer": "At each stage, you get up to 3 free rounds of revisions to make sure the result meets your expectations."
+			},
+			"4": {
+				"question": "4. What guarantees do you provide?",
+				"answer": "We are confident in our work quality, so we offer a 3-month technical warranty after project completion."
+			}
+		}
+	},
+	"Header": {
+		"logoAlt": "Company Logo",
+		"main": "Home",
+		"mainVariants": {
+			"homeMain": "Home - Main",
+			"homeImage": "Home - Image",
+			"homeVideo": "Home - Video"
+		},
+		"services": "Services",
+		"aboutUs": "About Us",
+		"portfolio": "Portfolio",
+		"faq": "FAQ",
+		"contacts": "Contacts",
+		"consultation": "Consultation"
+	},
+	"LanguageDropdown": {
+		"label": "Language",
+		"language": {
+			"english": "English",
+			"russian": "Russian",
+			"ukrainian": "Ukrainian"
+		}
+	}
+}
