@@ -17,9 +17,6 @@ import FAQ from "@/components/home/FAQ";
 function HomePage(props) {
   return (
     <>
-      <Preloader />
-
-      <Header />
       <Hero />
       <About />
       <OurServices />
@@ -31,7 +28,6 @@ function HomePage(props) {
       <FAQ />
 
       <Form />
-      <Footer />
     </>
   );
 }
