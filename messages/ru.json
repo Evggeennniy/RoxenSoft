@@ -243,6 +243,8 @@
     "solution": "решения",
     "faqTitle": "Самые часто задаваемые",
     "faqSubtitle": "вопросы по проекту",
+      "successfulProjects": "Успешные проекты",
+  "inAction": "в действии",
     "projects": {
       "sixid": {
         "title": "SIXID",

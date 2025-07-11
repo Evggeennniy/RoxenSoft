@@ -185,7 +185,7 @@ function index() {
               <div className="col-lg-12">
                 <div className="page-header-box">
                   <h1 className="wow fadeInUp" data-cursor="-opaque">
-                    Успешные проекты <span>в действии</span>
+                  {t('successfulProjects')} <span>{t('inAction')}</span>
                   </h1>
                   <nav className="wow fadeInUp" data-wow-delay="0.2s">
                     <ol className="breadcrumb">

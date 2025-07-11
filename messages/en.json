@@ -240,6 +240,8 @@
     "solution": "Solution",
     "faqTitle": "Most Frequently Asked",
     "faqSubtitle": "Questions About the Project",
+      "successfulProjects": "Successful Projects",
+  "inAction": "in Action",
     "projects": {
       "sixid": {
         "title": "SIXID",
