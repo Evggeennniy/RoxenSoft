@@ -74,7 +74,6 @@ export default async function RootLayout({ children, params }) {
           {children}
           <Footer />
           <ScriptsLoader />
-          <SimpleSwiperLoader />
         </NextIntlClientProvider>
 
         {/* <Script src="/js/jquery-3.7.1.min.js" strategy="beforeInteractive" />
