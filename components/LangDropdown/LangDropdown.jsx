@@ -36,10 +36,10 @@ export default function LanguageDropdown() {
   };
 
   return (
-    <li className='nav-item submenu' onMouseLeave={() => setOpen(false)}>
-      <a
-        href='#'
-        className='nav-link'
+    <li className="nav-item submenu" onMouseLeave={() => setOpen(false)}>
+      <Link
+        href="#"
+        className="nav-link"
         onClick={(e) => {
           e.preventDefault();
           setOpen((o) => !o);
@@ -49,15 +49,15 @@ export default function LanguageDropdown() {
         {languages.find((l) => l.code === currentLang)
           ? t(languages.find((l) => l.code === currentLang).labelKey)
           : currentLang}
-      </a>
+      </Link>
 
       {open && (
         <ul>
           {languages.map(({ code, labelKey }) => (
-            <li className='nav-item' key={code}>
-              <a
-                href='#'
-                className='nav-link'
+            <li className="nav-item" key={code}>
+              <Link
+                href="#"
+                className="nav-link"
                 onClick={(e) => {
                   e.preventDefault();
                   if (code !== currentLang) changeLanguage(code);
@@ -65,7 +65,7 @@ export default function LanguageDropdown() {
                 style={{ fontWeight: code === currentLang ? "700" : "normal" }}
               >
                 {t(labelKey)}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

@@ -239,6 +239,156 @@
     "prototype": "Prototype",
     "solution": "Solution",
     "faqTitle": "Most Frequently Asked",
-    "faqSubtitle": "Questions About the Project"
+    "faqSubtitle": "Questions About the Project",
+    "projects": {
+      "sixid": {
+        "title": "SIXID",
+        "niche": "Productivity",
+        "client": "Mark Konoshko",
+        "date": "07/10/2025",
+        "status": "40 days",
+        "description1": "SIXID tools are your personal compass in the world of goals, tasks, and resources. The ecosystem allows you to manage time, monitor progress, focus on what matters, and eliminate chaos.",
+        "description2": "With SIXID modules, you can build a path to your ambitions: from personal and financial goals to daily habits. We develop solutions that deeply integrate into your lifestyle, enhancing awareness, discipline, and a sense of control.",
+        "challenge": "Many modern people face increasing difficulty maintaining focus, managing time, and achieving goals in a fast-paced life. SIXID addresses these challenges by providing digital tools that help structure your day, build strategy, and achieve balance between personal and professional life.",
+        "needs": {
+          "0": "Helps identify priorities and build a path to goals, eliminating overload and disorganization.",
+          "1": "Whether you are an entrepreneur or a specialist, SIXID modules adapt to your lifestyle.",
+          "2": "Built-in analytics and tracking provide full transparency of your actions and results."
+        },
+        "solution": "SIXID is not just an app. It is an ecosystem that unites goals, tasks, habits, budgets, and key life areas into a single space. The service helps individuals and teams organize actions, free the mind from chaos, and focus on what truly matters. The system is designed so you can plan, analyze, and adapt to changes—both personal goals and business strategies. You make conscious decisions, track progress, and accelerate growth.",
+        "metrics": {
+          "0": "Tasks Completed",
+          "1": "Goals Achieved",
+          "2": "Productivity Growth",
+          "3": "Applications"
+        },
+        "faqIntro": "Here we have collected the most frequently asked questions that help you understand how the system works, who it is suitable for, and what features it offers.",
+        "faqs": {
+          "0": {
+            "q": "Who is the SIXID system for?",
+            "a": "SIXID is suitable for entrepreneurs, freelancers, teams, specialists, and anyone who wants to organize their life, business, and everyday tasks."
+          },
+          "1": {
+            "q": "Can SIXID be integrated with other services?",
+            "a": "Yes, we have provided APIs and webhooks for connecting external systems such as CRM, Google Calendar, email, and others."
+          },
+          "2": {
+            "q": "How many life areas does the SIXID system cover?",
+            "a": "SIXID covers goals, tasks, finances, calendar, notes, and emotional state — everything important for organizing life and growth in one place."
+          }
+        }
+      },
+      "callCenter": {
+        "title": "Call Center",
+        "niche": "Productivity",
+        "client": "Mark Konoshko",
+        "date": "25.08.2025",
+        "status": "54 days",
+        "description1": "The CRM system is designed to automate processes in the call center. The solution includes modules for managing incoming and outgoing calls, task tracking, statistics collection and analysis, as well as role-based access control (operator, supervisor, client, administrator).",
+        "description2": "The system optimizes workflows, increases employee transparency, and simplifies performance analysis.",
+        "challenge": "Many call centers face insufficient data organization, high employee workload, and lack of analytics on key performance indicators. This leads to a decline in service quality and overall efficiency.",
+        "needs": [
+          "Reduces time spent on task management and report generation",
+          "Provides full transparency of operator activities",
+          "Adapts to any call center structure and client types"
+        ],
+        "solution": "The CRM system is focused on call centers and allows you to unify tasks, inquiries, calls, analytics, and employee roles within a single digital space. It optimizes workflows, enhances transparency, and automates routine actions for operators and managers. The functionality adapts to various scenarios — from daily customer support to KPI evaluation and employee training. Control is increased, decision-making is accelerated, and managerial workload is reduced.",
+        "metrics": [
+          "Sales per month",
+          "Hours saved",
+          "Conversion growth",
+          "Connected CRMs"
+        ],
+        "faqIntro": "Here we have gathered the most frequently asked questions to help you understand how the system works, who it is suitable for, and what features it offers.",
+        "faqs": [
+          {
+            "q": "Who is this system suitable for?",
+            "a": "Suitable for companies with internal or external call centers that require tracking inquiries, automating calls, and role-based access control. Effective for sales, support, telemarketing, and survey departments."
+          },
+          {
+            "q": "Can it be integrated with other systems?",
+            "a": "Yes, API and webhook integrations are provided. You can connect CRMs, third-party telephony, messengers, and internal corporate systems."
+          },
+          {
+            "q": "What roles are supported in the system?",
+            "a": "The system implements a flexible access model: Operator, Supervisor, Administrator, Client. This allows role-based data visibility and actions."
+          }
+        ]
+      },
+      "valaga": {
+        "title": "VALAGA",
+        "niche": "furniture catalog",
+        "client": "Bogdan Valaga",
+        "date": "09.05.2025",
+        "status": "17 days",
+        "description1": "The digital platform is designed to automate processes in furniture stores. The solution includes modules for managing products and orders, tracking inventory, maintaining a customer database, collecting and analyzing sales, as well as role-based access control.",
+        "description2": "The system optimizes internal processes, increases employee transparency, and simplifies sales performance analysis.",
+        "challenge": "Many furniture stores face a lack of automation, manual accounting, errors in order formation, and insufficient analytics on assortment and customers. This leads to wasted time, decreased service quality, and lost revenue.",
+        "needs": [
+          "Reduces time spent on product accounting, order formation, and inventory",
+          "Ensures transparent work of all employees — from warehouse to checkout",
+          "Adapts to any furniture business format — from showroom to online store"
+        ],
+        "solution": "The platform is focused on furniture stores and unites management of product catalogs, orders, customer data, and logistics in one digital space. The system automates key processes: from order acceptance to shipment, ensures employee transparency, and helps avoid errors in picking and delivery.",
+        "metrics": [
+          "Sales per month",
+          "Processing hours",
+          "Repeat purchases",
+          "Integrations"
+        ],
+        "faqIntro": "Here we have collected the most frequently asked questions that help to understand how the system works, who it is suitable for, and what capabilities it provides.",
+        "faqs": [
+          {
+            "q": "Who is the system suitable for?",
+            "a": "Suitable for furniture stores of any scale — from local salons to online shops. Ideal for owners, sales managers, warehouse staff, and delivery services."
+          },
+          {
+            "q": "Can it be integrated with other systems?",
+            "a": "Yes, the system supports integration with 1C, MoySklad, Rozetka, Prom, OLX, WooCommerce, as well as courier services and CRMs. This allows synchronizing orders, inventory, and customers in real time."
+          },
+          {
+            "q": "Can inventory and product movement be tracked in the warehouse?",
+            "a": "Yes, the system allows real-time tracking of inventory, product movements between warehouses, and sales per item. Notifications for low stock, order reservation, and movement history are also available. This minimizes errors and helps better plan purchases."
+          }
+        ]
+      },
+      "kart": {
+        "title": "KART DE",
+        "niche": "Podiatry",
+        "client": "Igor Levin",
+        "date": "29.07.2025",
+        "status": "31 days",
+        "description1": "For over 30 years, KART has collaborated with research centers and pilot institutes in Israel, maintaining close and ongoing communication with practicing specialists, considering their feedback and suggestions, developing and improving unique product formulas with a high concentration of active ingredients, using rare and exclusive plant- and marine-derived components.",
+        "description2": "Need help? We are always ready to support you, provide advice, and offer necessary resources. Feel free to reach out anytime.",
+        "challenge": "Challenges in order systematization, distribution control, and collaboration with beauty salons and specialists. Lack of automation leads to delays, logistical errors, difficulties in sales analysis, and insufficient transparency in client interactions.",
+        "needs": [
+          "Reduces workload in order processing, inventory management, and partner collaboration",
+          "Provides control over the distribution chain — from central warehouse to cosmetologist",
+          "Adapts to the workflow of professional brands and international markets"
+        ],
+        "solution": "The digital platform is designed considering the needs of professional cosmetic brands. It unifies all key KART processes into a single system: from order processing and sample management to distribution control and analytics for salons and clients.",
+        "metrics": [
+          "Orders per month",
+          "Processing hours",
+          "Repeat purchases",
+          "Integrations"
+        ],
+        "faqIntro": "Here we have collected the most frequently asked questions that help understand how the system works, who it is suitable for, and what features it offers.",
+        "faqs": [
+          {
+            "q": "Who is this system suitable for?",
+            "a": "The system is ideal for cosmetic brands, distribution networks, training academies, and professional salons. Especially effective for working with distributors, cosmetologists, warehouses, and online orders."
+          },
+          {
+            "q": "Can it integrate with other systems?",
+            "a": "Yes, integration with CRM systems, payment gateways, and delivery services is supported. This allows centralized management of all sales and logistics channels."
+          },
+          {
+            "q": "Can bonuses, gifts, and samples be tracked in the system?",
+            "a": "Yes, the system allows separate accounting of samples, gift items, and bonus products. You can automatically add them to orders based on set conditions (for example, 'gift for purchases over 300 shekels')."
+          }
+        ]
+      }
+    }
   }
 }

@@ -21,11 +21,11 @@ function Header() {
             <div className="collapse navbar-collapse main-menu">
               <div className="nav-menu-wrapper">
                 <ul className="navbar-nav mr-auto" id="menu">
-                  <li className="nav-item submenu">
+                  <li className="nav-item ">
                     <Link className="nav-link" href="/">
                       {t("main")}
                     </Link>
-                    <ul>
+                    {/* <ul>
                       <li className="nav-item">
                         <Link className="nav-link" href="index.html">
                           {t("mainVariants.homeMain")}
@@ -41,7 +41,7 @@ function Header() {
                           {t("mainVariants.homeVideo")}
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" href="/#services">

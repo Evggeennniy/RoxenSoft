@@ -9,192 +9,161 @@ import call_center_project from "../../public/assets/call-center.png";
 import kart_project from "../../public/assets/kart.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import logo from "../../public/assets/images/logo.svg";
 const projects = [
   {
     slug: "sixid",
-    title: "SIXID",
-    niche: "Продуктивность",
-    client: "Марк Коношко",
-    date: "10.07.2025",
-    status: "40 дней",
     image: sixid_project,
-    description1:
-      "Инструменты SIXID — это ваш персональный компас в мире целей, задач и ресурсов. Экосистема позволяет управлять временем, контролировать прогресс, концентрироваться на важном и избавляться от хаоса.",
-    description2:
-      "С помощью модулей SIXID вы можете строить путь к своим амбициям: от личных и финансовых целей до повседневных привычек. Разрабатываем решения, которые глубоко интегрируются в образ жизни, усиливая осознанность, дисциплину и чувство контроля.",
-    challenge:
-      "Многие современные люди сталкиваются с тем, что при высоком темпе жизни всё сложнее сохранить фокус, управлять временем и достигать поставленных целей. SIXID решает эти задачи, предоставляя цифровые инструменты, которые помогают вам структурировать свой день, выстроить стратегию и достичь баланса между личным и профессиональным.",
-    needs: [
-      "Помогает выявить приоритеты и выстроить путь к цели, устраняя перегруз и дезорганизацию.",
-      "Будь вы предприниматель или специалист — модули SIXID адаптируются под ваш стиль жизни.",
-      "Встроеная аналитика и отслеживание, полная прозрачность своих действий и результатов.",
+    titleKey: "projects.sixid.title",
+    nicheKey: "projects.sixid.niche",
+    clientKey: "projects.sixid.client",
+    dateKey: "projects.sixid.date",
+    statusKey: "projects.sixid.status",
+    description1Key: "projects.sixid.description1",
+    description2Key: "projects.sixid.description2",
+    challengeKey: "projects.sixid.challenge",
+    needsKeys: [
+      "projects.sixid.needs.0",
+      "projects.sixid.needs.1",
+      "projects.sixid.needs.2",
     ],
-    solution:
-      "SIXID — это не просто приложение. Это экосистема, которая объединяет цели, задачи, привычки, бюджеты и ключевые сферы жизни в единое пространство. Сервис помогает людям и командам организовать свои действия, освободить ум от хаоса и фокусироваться на действительно важном. Система построена таким образом, чтобы вы могли планировать, анализировать и адаптироваться под изменения — как в личных целях, так и в бизнес-стратегиях. Принимаете решения осознанно, отслеживаете прогресс и ускоряете рост.",
+    solutionKey: "projects.sixid.solution",
     metrics: [
-      { value: "5000", unit: "+", label: "Выполненных задач" },
-      { value: "120", unit: "+", label: "Реализовано целей" },
-      { value: "92", unit: "%", label: "Рост продуктивности" },
-      { value: "10", unit: "+", label: "Приложений" },
+      { value: "5000", unit: "+", labelKey: "projects.sixid.metrics.0" },
+      { value: "120", unit: "+", labelKey: "projects.sixid.metrics.1" },
+      { value: "92", unit: "%", labelKey: "projects.sixid.metrics.2" },
+      { value: "10", unit: "+", labelKey: "projects.sixid.metrics.3" },
     ],
-    faqIntro:
-      "Здесь мы собрали самые частые вопросы, которые помогают понять, как работает система, кому она подходит и какие возможности она предоставляет.",
-    faqs: [
+    faqIntroKey: "projects.sixid.faqIntro",
+    faqsKeys: [
       {
-        question: "Для кого подходит система SIXID?",
-        answer:
-          "SIXID подходит для предпринимателей, фрилансеров, команд, специалистов и всех, кто хочет структурировать жизнь, бизнес и повседневные задачи.",
+        questionKey: "projects.sixid.faqs.0.q",
+        answerKey: "projects.sixid.faqs.0.a",
       },
       {
-        question: "Можно ли интегрировать SIXID с другими сервисами?",
-        answer:
-          "Да, мы предусмотрели API и вебхуки для подключения внешних систем — например, CRM, Google Календарь, почта и другие.",
+        questionKey: "projects.sixid.faqs.1.q",
+        answerKey: "projects.sixid.faqs.1.a",
       },
       {
-        question: "Сколько сфер жизни охватывает система SIXID?",
-        answer:
-          "SIXID охватывает цели, задачи, финансы, календарь, заметки и эмоциональное состояние — всё, что важно для организации жизни и роста в одном месте.",
+        questionKey: "projects.sixid.faqs.2.q",
+        answerKey: "projects.sixid.faqs.2.a",
       },
     ],
   },
   {
     slug: "call-center",
-    title: "Call Center",
-    niche: "Продуктивность",
-    client: "Марк Коношко",
-    date: "25.08.2025",
-    status: "54 дня",
     image: call_center_project,
-    description1:
-      "CRM-система разработана для автоматизации процессов в колл-центре. Решение включает модули управления входящими и исходящими звонками, контроль за выполнением задач, сбор и анализ статистики, а также разграничение прав доступа по ролям (оператор, супервайзер, клиент, администратор).",
-    description2:
-      "Система оптимизирует рабочие процессы, повышает прозрачность действий сотрудников и упрощает анализ эффективности.",
-    challenge:
-      "Многие колл-центры сталкиваются с недостаточной систематизацией данных, высокой нагрузкой на сотрудников и отсутствием аналитики по ключевым показателям. Это приводит к потере качества обслуживания и снижению общей эффективности.",
-    needs: [
-      "Снижает время на управление задачами и формирование отчётов",
-      "Обеспечивает полную прозрачность работы операторов",
-      "Адаптируется под структуру любого колл-центра и тип клиентов",
+    titleKey: "projects.callCenter.title",
+    nicheKey: "projects.callCenter.niche",
+    clientKey: "projects.callCenter.client",
+    dateKey: "projects.callCenter.date",
+    statusKey: "projects.callCenter.status",
+    description1Key: "projects.callCenter.description1",
+    description2Key: "projects.callCenter.description2",
+    challengeKey: "projects.callCenter.challenge",
+    needsKeys: [
+      "projects.callCenter.needs.0",
+      "projects.callCenter.needs.1",
+      "projects.callCenter.needs.2",
     ],
-    solution:
-      "CRM-система ориентирована на колл-центры и позволяет объединить задачи, обращения, звонки, аналитику и роли сотрудников в едином цифровом пространстве. Система оптимизирует рабочие процессы, повышает прозрачность и автоматизирует рутинные действия операторов и менеджеров. Функционал адаптируется под различные сценарии — от ежедневной поддержки клиентов до оценки KPI и обучения сотрудников. Повышается контроль, ускоряется принятие решений, снижается нагрузка на руководство.",
+    solutionKey: "projects.callCenter.solution",
     metrics: [
-      { value: "590", unit: "+", label: "Продаж в мес." },
-      { value: "100", unit: "+", label: "Сэкономленных часов" },
-      { value: "25", unit: "%", label: "Рост конверсии" },
-      { value: "15", unit: "+", label: "Подключенных CRM" },
+      { value: "590", unit: "+", labelKey: "projects.callCenter.metrics.0" },
+      { value: "100", unit: "+", labelKey: "projects.callCenter.metrics.1" },
+      { value: "25", unit: "%", labelKey: "projects.callCenter.metrics.2" },
+      { value: "15", unit: "+", labelKey: "projects.callCenter.metrics.3" },
     ],
-    faqIntro:
-      "Здесь мы собрали самые частые вопросы, которые помогают понять, как работает система, кому она подходит и какие возможности она предоставляет.",
-    faqs: [
+    faqIntroKey: "projects.callCenter.faqIntro",
+    faqsKeys: [
       {
-        question: "Для кого подходит система?",
-        answer:
-          "Подходит для компаний с внутренним или внешним колл-центром, где требуется отслеживать обращения, автоматизировать звонки и разделять доступ по ролям. Эффективна для отделов продаж, поддержки, телемаркетинга и опросов.",
+        questionKey: "projects.callCenter.faqs.0.q",
+        answerKey: "projects.callCenter.faqs.0.a",
       },
       {
-        question: "Можно ли интегрировать с другими системами?",
-        answer:
-          "Да, предусмотрены API и webhook-интеграции. Можно подключить CRM, сторонние телефонии, мессенджеры и внутренние корпоративные системы.",
+        questionKey: "projects.callCenter.faqs.1.q",
+        answerKey: "projects.callCenter.faqs.1.a",
       },
       {
-        question: "Какие роли поддерживаются в системе?",
-        answer:
-          "Система реализует гибкую модель доступа: Оператор, Супервайзер, Администратор, Клиент. Это позволяет разграничить видимость данных и действий в зависимости от должности.",
+        questionKey: "projects.callCenter.faqs.2.q",
+        answerKey: "projects.callCenter.faqs.2.a",
       },
     ],
   },
   {
     slug: "valaga",
-    title: "VALAGA",
-    niche: "каталог мебели",
-    client: "Богдан Валага",
-    date: "09.05.2025",
-    status: "17 дней",
     image: valaga_project,
-    description1:
-      "Цифровая платформа разработана для автоматизации процессов в магазине мебели. Решение включает модули управления товарами и заказами, отслеживание остатков, ведение клиентской базы, сбор и анализ продаж, а также разграничение прав доступа по ролям.",
-    description2:
-      "Система оптимизирует внутренние процессы, повышает прозрачность работы сотрудников и упрощает анализ эффективности продаж.",
-    challenge:
-      "Многие мебельные магазины сталкиваются с нехваткой автоматизации, ручным учетом, ошибками при формировании заказов и недостаточной аналитикой по ассортименту и клиентам. Это ведет к потерям времени, снижению уровня обслуживания и упущенной прибыли.",
-    needs: [
-      "Снижает время на учёт товаров, формирование заказов и инвентаризацию",
-      "Обеспечивает прозрачную работу всех сотрудников — от склада до кассы",
-      "Адаптируется под формат любого мебельного бизнеса — от шоурума до интернет-магазина",
+    titleKey: "projects.valaga.title",
+    nicheKey: "projects.valaga.niche",
+    clientKey: "projects.valaga.client",
+    dateKey: "projects.valaga.date",
+    statusKey: "projects.valaga.status",
+    description1Key: "projects.valaga.description1",
+    description2Key: "projects.valaga.description2",
+    challengeKey: "projects.valaga.challenge",
+    needsKeys: [
+      "projects.valaga.needs.0",
+      "projects.valaga.needs.1",
+      "projects.valaga.needs.2",
     ],
-    solution:
-      "Платформа ориентирована на мебельные магазины и объединяет управление каталогом товаров, заказами, клиентскими данными и логистикой в одном цифровом пространстве. Система автоматизирует ключевые процессы: от приёма заказа до отгрузки, обеспечивает прозрачность работы сотрудников и помогает избежать ошибок при комплектации и доставке.",
+    solutionKey: "projects.valaga.solution",
     metrics: [
-      { value: "90", unit: "+", label: "Продаж в мес." },
-      { value: "300", unit: "+", label: "Часов обработки" },
-      { value: "31", unit: "%", label: "Повторных покупок" },
-      { value: "5", unit: "+", label: "Интеграций" },
+      { value: "90", unit: "+", labelKey: "projects.valaga.metrics.0" },
+      { value: "300", unit: "+", labelKey: "projects.valaga.metrics.1" },
+      { value: "31", unit: "%", labelKey: "projects.valaga.metrics.2" },
+      { value: "5", unit: "+", labelKey: "projects.valaga.metrics.3" },
     ],
-    faqIntro:
-      "Здесь мы собрали самые частые вопросы, которые помогают понять, как работает система, кому она подходит и какие возможности она предоставляет.",
-    faqs: [
+    faqIntroKey: "projects.valaga.faqIntro",
+    faqsKeys: [
       {
-        question: "Для кого подходит система?",
-        answer:
-          "Подходит для мебельных магазинов любого масштаба — от локальных салонов до интернет-магазинов. Идеально для владельцев, менеджеров по продажам, складского персонала и службы доставки.",
+        questionKey: "projects.valaga.faqs.0.q",
+        answerKey: "projects.valaga.faqs.0.a",
       },
       {
-        question: "Можно ли интегрировать с другими системами?",
-        answer:
-          "Да, система поддерживает интеграцию с 1С, МойСклад, Rozetka, Prom, OLX, WooCommerce, а также с курьерскими службами и CRM. Это позволяет синхронизировать заказы, остатки и клиентов в реальном времени.",
+        questionKey: "projects.valaga.faqs.1.q",
+        answerKey: "projects.valaga.faqs.1.a",
       },
       {
-        question: "Можно ли отслеживать остатки и движение товаров на складе?",
-        answer:
-          "Да, система позволяет в режиме реального времени отслеживать остатки, движение товаров между складами и продажу по каждой единице. Также доступны уведомления о низком остатке, резервирование под заказ и история перемещений. Это минимизирует ошибки и помогает лучше планировать закупки.",
+        questionKey: "projects.valaga.faqs.2.q",
+        answerKey: "projects.valaga.faqs.2.a",
       },
     ],
   },
   {
-    title: "KART DE",
     slug: "KART",
-    niche: "Подология",
-    client: "Игорь Левин",
-    date: "29.07.2025",
-    status: "31 дня",
     image: kart_project,
-    description1:
-      "Более 30 лет компания KART сотрудничает с научно-исследовательскими центрами и пилотными институтами Израиля, поддерживает постоянную и тесную связь с практикующими специалистами, учитывает их замечания и пожелания, разрабатывает и усовершенствует уникальные формулы продуктов, с высокой концентрацией активных веществ, использует редкие и эксклюзивные ингредиенты растительного и морского происхождения.",
-    description2:
-      "Нужна помощь? Мы всегда готовы поддержать вас, дать советы и предоставить необходимые ресурсы. Обращайтесь в любое время.",
-    challenge:
-      "Трудности в систематизации заказов, контроле дистрибуции и взаимодействии с салонами красоты и специалистами. Отсутствие автоматизации приводит к задержкам, ошибкам в логистике, сложностям в анализе продаж и нехватке прозрачности в работе с клиентами.",
-    needs: [
-      "Снижает нагрузку при оформлении заказов, учёте остатков и работе с партнёрами",
-      "Обеспечивает контроль над цепочкой дистрибуции — от центрального склада до косметолога",
-      "Адаптируется под формат работы профессиональных брендов и международных рынков",
+    titleKey: "projects.kart.title",
+    nicheKey: "projects.kart.niche",
+    clientKey: "projects.kart.client",
+    dateKey: "projects.kart.date",
+    statusKey: "projects.kart.status",
+    description1Key: "projects.kart.description1",
+    description2Key: "projects.kart.description2",
+    challengeKey: "projects.kart.challenge",
+    needsKeys: [
+      "projects.kart.needs.0",
+      "projects.kart.needs.1",
+      "projects.kart.needs.2",
     ],
-    solution:
-      "Цифровая платформа создана с учётом потребностей профессиональных косметических брендов. Она объединяет все ключевые процессы KART в единую систему: от обработки заказов и учёта пробников до контроля дистрибуции и аналитики по салонам и клиентам.",
+    solutionKey: "projects.kart.solution",
     metrics: [
-      { value: "100", unit: "+", label: "Заказов  в месяц" },
-      { value: "500", unit: "+", label: "Часов  обработки" },
-      { value: "78", unit: "%", label: "Повторных покупок" },
-      { value: "10", unit: "+", label: "Интеграций" },
+      { value: "100", unit: "+", labelKey: "projects.kart.metrics.0" },
+      { value: "500", unit: "+", labelKey: "projects.kart.metrics.1" },
+      { value: "78", unit: "%", labelKey: "projects.kart.metrics.2" },
+      { value: "10", unit: "+", labelKey: "projects.kart.metrics.3" },
     ],
-    faqIntro:
-      "Здесь мы собрали самые частые вопросы, которые помогают понять, как работает система, кому она подходит и какие возможности она предоставляет.",
-    faqs: [
+    faqIntroKey: "projects.kart.faqIntro",
+    faqsKeys: [
       {
-        question: "Для кого подходит система?",
-        answer:
-          "Система идеально подходит для косметических брендов, сетей дистрибуции, обучающих академий и профессиональных салонов. Особенно эффективна для работы с дистрибьюторами, косметологами, складами и онлайн-заказами.",
+        questionKey: "projects.kart.faqs.0.q",
+        answerKey: "projects.kart.faqs.0.a",
       },
       {
-        question: "Можно ли интегрировать с другими системами?",
-        answer:
-          "Да, поддерживается интеграция c CRM-системами, платёжными шлюзами, службами доставки. Это позволяет централизованно управлять всеми каналами продаж и логистики.",
+        questionKey: "projects.kart.faqs.1.q",
+        answerKey: "projects.kart.faqs.1.a",
       },
       {
-        question: "Можно ли учитывать бонусы, подарки и пробники в системе?",
-        answer:
-          "Да, система позволяет отдельно учитывать пробники, подарочные позиции и бонусные продукты. Вы можете автоматически добавлять их к заказам по заданным условиям (например, 'при покупке от 300 шекелей — подарок').",
+        questionKey: "projects.kart.faqs.2.q",
+        answerKey: "projects.kart.faqs.2.a",
       },
     ],
   },
@@ -203,29 +172,32 @@ function index() {
   const { slug } = useParams();
   const t = useTranslations("ProjectDetails");
   const project = projects.find((p) => p.slug === slug);
-  const p = useTranslations(`ProjectDetails.${slug}`);
+  const p = useTranslations(`ProjectDetails`);
   if (!project) {
     return <h2>Проект не найден</h2>;
   }
   return (
     <>
       <div>
-        <div class="page-header">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-12">
-                <div class="page-header-box">
-                  <h1 class="wow fadeInUp" data-cursor="-opaque">
+        <div className="page-header">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-12">
+                <div className="page-header-box">
+                  <h1 className="wow fadeInUp" data-cursor="-opaque">
                     Успешные проекты <span>в действии</span>
                   </h1>
-                  <nav class="wow fadeInUp" data-wow-delay="0.2s">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item">
+                  <nav className="wow fadeInUp" data-wow-delay="0.2s">
+                    <ol className="breadcrumb">
+                      <li className="breadcrumb-item">
                         <Link href="/">home</Link>
                       </li>
 
-                      <li class="breadcrumb-item active" aria-current="page">
-                        {project.title}
+                      <li
+                        className="breadcrumb-item active"
+                        aria-current="page"
+                      >
+                        {p(project.titleKey)}
                       </li>
                     </ol>
                   </nav>
@@ -245,19 +217,19 @@ function index() {
                   <div className="project-category-list">
                     <ul>
                       <li>
-                        {t("projectTitle")}: <span>{project.title}</span>
+                        {t("projectTitle")}: <span>{p(project.titleKey)}</span>
                       </li>
                       <li>
-                        {t("niche")}: <span>{project.niche}</span>
+                        {t("niche")}: <span>{p(project.nicheKey)}</span>
                       </li>
                       <li>
-                        {t("client")}: <span>{project.client}</span>
+                        {t("client")}: <span>{p(project.clientKey)}</span>
                       </li>
                       <li>
-                        {t("date")}: <span>{project.date}</span>
+                        {t("date")}: <span>{p(project.dateKey)}</span>
                       </li>
                       <li>
-                        {t("status")}: <span>{project.status}</span>
+                        {t("status")}: <span>{p(project.statusKey)}</span>
                       </li>
                     </ul>
                   </div>
@@ -265,7 +237,7 @@ function index() {
 
                 <div className="sidebar-cta-box">
                   <div className="sidebar-cta-logo">
-                    <img src="/images/sidebar-cta-logo.svg" alt="CTA Logo" />
+                    <Image src={logo} alt=" Logo" />
                   </div>
 
                   <div className="sidebar-cta-content">
@@ -280,7 +252,7 @@ function index() {
                           href="tel:152885253"
                           className="d-flex align-items-center text-decoration-none gap-2"
                         >
-                          <i className="fa-brands fa-xl fa-telegram gradient-icon d-flex align-items-center"></i>
+                          <i className="fa-brands fa-2x   fa-telegram gradient-icon d-flex align-items-center"></i>
                           +(00) - 152 885 253
                         </Link>
                       </li>
@@ -289,7 +261,7 @@ function index() {
                           href="mailto:support@domainname.com"
                           className="d-flex align-items-center text-decoration-none gap-2"
                         >
-                          <i className="fa-brands fa-xl fa-whatsapp gradient-icon d-flex align-items-center"></i>
+                          <i className="fa-brands fa-2x fa-whatsapp gradient-icon d-flex align-items-center"></i>
                           support@domainname.com
                         </Link>
                       </li>
@@ -304,7 +276,7 @@ function index() {
               <div className="project-single-contemt">
                 <div className="page-single-image">
                   <figure className="image-anime reveal">
-                    <Image src={project.image} alt={project.title} />
+                    <Image src={project.image} alt={project.titleKey} />
                   </figure>
                 </div>
 
@@ -313,10 +285,10 @@ function index() {
                     {t("projectDescription")} <span>{t("project")}</span>
                   </h2>
                   <p className="wow fadeInUp" data-wow-delay="0.2s">
-                    {project.description1}
+                    {p(project.description1Key)}
                   </p>
                   <p className="wow fadeInUp" data-wow-delay="0.4s">
-                    {project.description2}
+                    {p(project.description2Key)}
                   </p>
 
                   <div className="project-challenge-box">
@@ -325,25 +297,25 @@ function index() {
                     </h2>
 
                     <p className="wow fadeInUp" data-wow-delay="0.2s">
-                      {project.challenge}
+                      {p(project.challengeKey)}
                     </p>
 
                     <ul
                       className="project-challenge-list wow fadeInUp"
                       data-wow-delay="0.4s"
                     >
-                      {project.needs.map((item, index) => (
-                        <li key={index}>{item}</li>
+                      {project.needsKeys.map((key, index) => (
+                        <li key={index}>{p(key)}</li>
                       ))}
                     </ul>
                   </div>
 
                   <div className="project-solution-box">
                     <h2 className="wow fadeInUp">
-                      {t(" prototype")} <span>{t("solution")}</span>
+                      {t("prototype")} <span>{t("solution")}</span>
                     </h2>
                     <p className="wow fadeInUp" data-wow-delay="0.2s">
-                      {project.solution}
+                      {p(project.solutionKey)}
                     </p>
 
                     <div className="project-solution-counters">
@@ -353,7 +325,7 @@ function index() {
                             <span className="counter">{metric.value}</span>
                             {metric.unit}
                           </h2>
-                          <p>{metric.label}</p>
+                          <p>{p(metric.labelKey)}</p>
                         </div>
                       ))}
                     </div>
@@ -372,7 +344,7 @@ function index() {
                   </div>
 
                   <div className="faq-accordion" id="faqaccordion">
-                    {project.faqs.map((faq, index) => (
+                    {project.faqsKeys.map((faq, index) => (
                       <div
                         className="accordion-item wow fadeInUp"
                         data-wow-delay={`${index * 0.2}s`}
@@ -389,7 +361,7 @@ function index() {
                             aria-expanded={index === 1 ? "true" : "false"}
                             aria-controls={`collapse${index}`}
                           >
-                            {index + 1}. {faq.question}
+                            {index + 1}. {p(faq.questionKey)}
                           </button>
                         </h2>
                         <div
@@ -401,7 +373,7 @@ function index() {
                           data-bs-parent="#faqaccordion"
                         >
                           <div className="accordion-body">
-                            <p>{faq.answer}</p>
+                            <p>{p(faq.answerKey)}</p>
                           </div>
                         </div>
                       </div>
