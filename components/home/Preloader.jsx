@@ -22,11 +22,11 @@ export default function Preloader() {
   if (!loading) return null;
 
   return (
-    <div className='preloader'>
-      <div className='loading-container'>
-        <div className='loading'></div>
-        <div id='loading-icon'>
-          <Image src={loader} alt='loader' width={50} height={50} />
+    <div className="preloader">
+      <div className="loading-container">
+        <div className="loading"></div>
+        <div id="loading-icon">
+          <Image src={loader} alt="loader" width={50} height={50} />
         </div>
       </div>
     </div>

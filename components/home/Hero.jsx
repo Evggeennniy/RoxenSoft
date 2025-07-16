@@ -12,72 +12,89 @@ function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <div className='hero'>
-      <div className='container'>
-        <div className='row align-items-center'>
-          <div className='col-lg-12'>
-            <div className='hero-content'>
-              <div className='section-title'>
-                <h1 className='wow fadeInUp' data-cursor='-opaque'>
+    <div className="hero">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-12">
+            <div className="hero-content">
+              <div className="section-title">
+                <h1 className="wow fadeInUp" data-cursor="-opaque">
                   {t("title.part1")} <br /> <span>{t("title.highlight")}</span>
                 </h1>
-                <p className='wow fadeInUp hero-p' data-wow-delay='0.2s'>
+                <p className="wow fadeInUp hero-p" data-wow-delay="0.2s">
                   {t("description")}
                 </p>
               </div>
 
-              <div className='hero-btn wow fadeInUp' data-wow-delay='0.4s'>
-                <a href='contact.html' className='btn-default btn-highlighted'>
+              <div className="hero-btn wow fadeInUp" data-wow-delay="0.4s">
+                <a
+                  href="https://t.me/roxensoft_ua"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-default btn-highlighted"
+                >
                   {t("buttons.submitRequest")}
                 </a>
-                <div className='d-flex gap-2'>
-                  <a href='#' className='btn-default btn-default__social'>
-                    <Image width={20} src={whatsAppIcon} alt='whatsApp' />
-                  </a>
-                  <a href='#' className='btn-default btn-default__social'>
-                    <Image width={20} src={tgIcon} alt='tg' />
-                  </a>
+                <div className="d-flex gap-2">
+                  <div className="d-flex gap-2">
+                    <a
+                      href="https://wa.me/380732001611"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-default btn-default__social"
+                    >
+                      <Image width={20} src={whatsAppIcon} alt="WhatsApp" />
+                    </a>
+                    <a
+                      href="https://t.me/roxensoft_ua"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-default btn-default__social"
+                    >
+                      <Image width={20} src={tgIcon} alt="Telegram" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className='hero-company-slider'>
+              <div className="hero-company-slider">
                 <p>{t("partners")}</p>
 
-                <div className='swiper'>
-                  <div className='swiper-wrapper'>
-                    <div className='swiper-slide'>
-                      <div className='company-logo'>
-                        <Image src={RoxTechIcon} alt='RoxTech' />
+                <div className="swiper">
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                      <div className="company-logo">
+                        <Image src={RoxTechIcon} alt="RoxTech" />
                       </div>
                     </div>
 
-                    <div className='swiper-slide'>
-                      <div className='company-logo'>
-                        <Image src={KARTIcon} alt='KART' />
+                    <div className="swiper-slide">
+                      <div className="company-logo">
+                        <Image src={KARTIcon} alt="KART" />
                       </div>
                     </div>
 
-                    <div className='swiper-slide'>
-                      <div className='company-logo'>
-                        <Image src={sixidIcon} alt='Sixid' />
+                    <div className="swiper-slide">
+                      <div className="company-logo">
+                        <Image src={sixidIcon} alt="Sixid" />
                       </div>
                     </div>
 
-                    <div className='swiper-slide'>
-                      <div className='company-logo'>
-                        <Image src={RoxTechIcon} alt='RoxTech' />
+                    <div className="swiper-slide">
+                      <div className="company-logo">
+                        <Image src={RoxTechIcon} alt="RoxTech" />
                       </div>
                     </div>
 
-                    <div className='swiper-slide'>
-                      <div className='company-logo'>
-                        <Image src={shironIcon} alt='Shiron' />
+                    <div className="swiper-slide">
+                      <div className="company-logo">
+                        <Image src={shironIcon} alt="Shiron" />
                       </div>
                     </div>
 
-                    <div className='swiper-slide'>
-                      <div className='company-logo'>
-                        <Image src={sixidIcon} alt='Sixid' />
+                    <div className="swiper-slide">
+                      <div className="company-logo">
+                        <Image src={sixidIcon} alt="Sixid" />
                       </div>
                     </div>
                   </div>

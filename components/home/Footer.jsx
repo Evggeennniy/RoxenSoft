@@ -1,41 +1,53 @@
 import React from "react";
-import logo from "../../public/assets/images/logo.svg";
+import logo from "../../public/assets/footer-logo.svg";
+import tgIcon from "../../public/assets/hugeicons_telegram.svg";
+import whatsAppIcon from "../../public/assets/whatsApp.svg";
+import gmailIcon from "../../public/assets/gmail.com.svg";
+import instaIcon from "../../public/assets/insta.svg";
 import Image from "next/image";
 function Footer(props) {
   return (
     <footer className="main-footer">
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-4">
+        <div className="row justify-content-center text-center">
+          <div className="col-lg-12">
             <div className="about-footer">
-              <div className="footer-logo">
-                <Image src={logo} alt="footer Logo" />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 col-md-8">
-            <div className="footer-contact-box">
-              <div className="footer-links">
-                <h3>Контакты</h3>
-                <p>
-                  <a href="tel:152885253">+(00) - 152 885 253</a>
-                </p>
-                <p>
-                  <a href="mailto:info@domainname.com">info@domainname.com</a>
-                </p>
+              <div className="footer-logo mb-3">
+                <Image src={logo} alt="Footer Logo" />
               </div>
 
-              <div className="footer-links">
-                <h3>Навигация</h3>
-                <p>123 Lorem Street Suite 5B, Ips Park London, UK SW1A 1AA</p>
+              <div className="d-flex justify-content-center gap-2 mb-3">
+                <a
+                  href="https://wa.me/380732001611"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-default btn-default__social"
+                >
+                  <Image width={20} src={whatsAppIcon} alt="WhatsApp" />
+                </a>
+                <a
+                  href="https://t.me/roxensoft_ua"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-default btn-default__social"
+                >
+                  <Image width={20} src={tgIcon} alt="Telegram" />
+                </a>
+                <a
+                  href="mailto:rox.techlead@gmail.com"
+                  className="btn-default btn-default__social"
+                >
+                  <Image width={20} src={gmailIcon} alt="Gmail" />
+                </a>
+                <a href="#" className="btn-default btn-default__social">
+                  <Image width={20} src={instaIcon} alt="Instagram" />
+                </a>
+              </div>
+
+              <div className="footer-copyright-text">
+                <p>All rights reserved by ROX TechLead.</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="col-lg-12">
-          <div className="footer-copyright-text">
-            <p>All rights reserved by ROX TechLead.</p>
           </div>
         </div>
       </div>

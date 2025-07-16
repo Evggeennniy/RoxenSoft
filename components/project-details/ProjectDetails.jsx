@@ -185,7 +185,7 @@ function index() {
               <div className="col-lg-12">
                 <div className="page-header-box">
                   <h1 className="wow fadeInUp" data-cursor="-opaque">
-                  {t('successfulProjects')} <span>{t('inAction')}</span>
+                    {t("successfulProjects")} <span>{t("inAction")}</span>
                   </h1>
                   <nav className="wow fadeInUp" data-wow-delay="0.2s">
                     <ol className="breadcrumb">
@@ -236,9 +236,9 @@ function index() {
                 </div>
 
                 <div className="sidebar-cta-box">
-                  <div className="sidebar-cta-logo">
-                    <Image src={logo} alt=" Logo" />
-                  </div>
+                  {/* <div className="sidebar-cta-logo"> */}
+                  <Image className="mb-3" src={logo} alt="Logo" />
+                  {/* </div> */}
 
                   <div className="sidebar-cta-content">
                     <h3>{t("ctaTitle")}</h3>
@@ -249,20 +249,24 @@ function index() {
                     <ul>
                       <li className="d-flex align-items-center gap-2">
                         <Link
-                          href="tel:152885253"
+                          href="https://t.me/roxensoft_ua"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="d-flex align-items-center text-decoration-none gap-2"
                         >
-                          <i className="fa-brands fa-2x   fa-telegram gradient-icon d-flex align-items-center"></i>
-                          +(00) - 152 885 253
+                          <i className="fa-brands fa-2x fa-telegram gradient-icon d-flex align-items-center"></i>
+                          @roxensoft_ua
                         </Link>
                       </li>
                       <li className="d-flex align-items-center gap-2">
                         <Link
-                          href="mailto:support@domainname.com"
+                          href="https://wa.me/380732001611"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="d-flex align-items-center text-decoration-none gap-2"
                         >
                           <i className="fa-brands fa-2x fa-whatsapp gradient-icon d-flex align-items-center"></i>
-                          support@domainname.com
+                          +380 73 200 16 11
                         </Link>
                       </li>
                     </ul>
@@ -305,7 +309,9 @@ function index() {
                       data-wow-delay="0.4s"
                     >
                       {project.needsKeys.map((key, index) => (
-                        <li key={index}>{p(key)}</li>
+                        <li key={index} style={{ listStyle: "none" }}>
+                          {p(key)}
+                        </li>
                       ))}
                     </ul>
                   </div>

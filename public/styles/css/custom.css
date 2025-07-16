@@ -241,9 +241,10 @@ body {
 }
 
 .btn-default__social {
-  border-radius: 100%;
+  border-radius: 999%;
   padding: 10px !important;
   width: 3.125rem;
+  height: 3.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1038,9 +1039,8 @@ header.main-header .header-sticky.active {
   background: var(--accent-color);
 }
 
-.text-effect .line {
-  width: 100%;
-  color: var(--dark-divider-color);
+.text-effect {
+  color: transparent;
   background: linear-gradient(
       120deg,
       var(--primary-color),
@@ -1049,9 +1049,9 @@ header.main-header .header-sticky.active {
     no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
-  background-size: 0%;
+  background-size: 0% 100%;
+  transition: background-size 1s ease;
 }
-
 .about-us-box {
   background: var(--secondary-color);
   border: 0.0625rem solid var(--divider-color);
@@ -2158,7 +2158,7 @@ header.main-header .header-sticky.active {
 /************************************/
 
 .main-footer {
-  background: url("../../assets/images/footer-bg.png") no-repeat;
+  /* background: url("../../assets/images/footer-bg.png") no-repeat; */
   background-position: bottom center;
   background-size: auto;
   border-top: 0.0625rem solid var(--divider-color);
@@ -2856,7 +2856,7 @@ header.main-header .header-sticky.active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("../../assets/images/sidebar-cta-box.jpg") no-repeat;
+  background: url("../../assets/bg-card.png") no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 30%;

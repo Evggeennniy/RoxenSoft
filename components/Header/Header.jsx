@@ -64,7 +64,7 @@ function Header() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="#">
+                    <Link className="nav-link" href="#contacts">
                       {t("contacts")}
                     </Link>
                   </li>

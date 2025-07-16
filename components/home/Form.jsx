@@ -71,103 +71,103 @@ function Form() {
   };
 
   return (
-    <div className='page-contact-us'>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-lg-12'>
-            <div className='conatct-us-form'>
-              <div className='contact-form'>
-                <div className='section-title'>
+    <div className="page-contact-us">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="conatct-us-form">
+              <div className="contact-form">
+                <div className="section-title">
                   <h2
-                    className='wow fadeInUp text-center'
-                    data-cursor='-opaque'
+                    className="wow fadeInUp text-center"
+                    data-cursor="-opaque"
                   >
                     {t("leaveRequest")}
                   </h2>
                 </div>
 
                 <form
-                  id='contactForm'
+                  id="contactForm"
                   onSubmit={handleSubmit}
-                  className='wow fadeInUp'
-                  data-wow-delay='0.2s'
+                  className="wow fadeInUp"
+                  data-wow-delay="0.2s"
                   noValidate
                 >
-                  <div className='row'>
-                    <div className='form-group col-md-6 mb-4'>
+                  <div className="row">
+                    <div className="form-group col-md-6 mb-4">
                       <input
-                        type='text'
-                        name='fname'
+                        type="text"
+                        name="fname"
                         className={`form-control ${
                           errors.fname ? "is-invalid" : ""
                         }`}
-                        id='fname'
+                        id="fname"
                         placeholder={t("placeholders.fname")}
                         value={formData.fname}
                         onChange={handleChange}
                         required
                       />
                       {errors.fname && (
-                        <div className='invalid-feedback'>{errors.fname}</div>
+                        <div className="invalid-feedback">{errors.fname}</div>
                       )}
                     </div>
 
-                    <div className='form-group col-md-6 mb-4'>
+                    <div className="form-group col-md-6 mb-4">
                       <input
-                        type='email'
-                        name='email'
+                        type="email"
+                        name="email"
                         className={`form-control ${
                           errors.email ? "is-invalid" : ""
                         }`}
-                        id='email'
+                        id="email"
                         placeholder={t("placeholders.email")}
                         value={formData.email}
                         onChange={handleChange}
                         required
                       />
                       {errors.email && (
-                        <div className='invalid-feedback'>{errors.email}</div>
+                        <div className="invalid-feedback">{errors.email}</div>
                       )}
                     </div>
 
-                    <div className='form-group col-lg-12 mb-4'>
+                    <div className="form-group col-lg-12 mb-4">
                       <input
-                        type='text'
-                        name='phone'
+                        type="text"
+                        name="phone"
                         className={`form-control ${
                           errors.phone ? "is-invalid" : ""
                         }`}
-                        id='phone'
+                        id="phone"
                         placeholder={t("placeholders.phone")}
                         value={formData.phone}
                         onChange={handleChange}
                         required
                       />
                       {errors.phone && (
-                        <div className='invalid-feedback'>{errors.phone}</div>
+                        <div className="invalid-feedback">{errors.phone}</div>
                       )}
                     </div>
 
-                    <div className='form-group col-md-12 mb-5'>
+                    <div className="form-group col-md-12 mb-5">
                       <textarea
-                        name='message'
-                        className='form-control'
-                        id='message'
-                        rows='4'
+                        name="message"
+                        className="form-control"
+                        id="message"
+                        rows="4"
                         placeholder={t("placeholders.message")}
                         value={formData.message}
                         onChange={handleChange}
                       ></textarea>
                     </div>
 
-                    <div className='col-lg-12'>
-                      <div className='contact-form-btn'>
-                        <button type='submit' className='btn-default'>
+                    <div className="col-lg-12">
+                      <div className="contact-form-btn">
+                        <button type="submit" className="btn-default">
                           <span>{t("buttons.submit")}</span>
                         </button>
                       </div>
                       {submitStatus && (
-                        <div className='mt-3 text-center'>
+                        <div className="mt-3 text-center">
                           <p>{submitStatus}</p>
                         </div>
                       )}
