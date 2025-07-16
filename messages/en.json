@@ -220,8 +220,8 @@
     "label": "Language",
     "language": {
       "english": "English",
-      "russian": "Russian",
-      "ukrainian": "Ukrainian"
+      "russian": "Русский",
+      "ukrainian": "Українська"
     }
   },
   "ProjectDetails": {
@@ -240,8 +240,8 @@
     "solution": "Solution",
     "faqTitle": "Most Frequently Asked",
     "faqSubtitle": "Questions About the Project",
-      "successfulProjects": "Successful Projects",
-  "inAction": "in Action",
+    "successfulProjects": "Successful Projects",
+    "inAction": "in Action",
     "projects": {
       "sixid": {
         "title": "SIXID",

@@ -222,9 +222,9 @@
   "LanguageDropdown": {
     "label": "Язык",
     "language": {
-      "english": "Английский",
+      "english": "English",
       "russian": "Русский",
-      "ukrainian": "Украинский"
+      "ukrainian": "Українська"
     }
   },
   "ProjectDetails": {
@@ -243,8 +243,8 @@
     "solution": "решения",
     "faqTitle": "Самые часто задаваемые",
     "faqSubtitle": "вопросы по проекту",
-      "successfulProjects": "Успешные проекты",
-  "inAction": "в действии",
+    "successfulProjects": "Успешные проекты",
+    "inAction": "в действии",
     "projects": {
       "sixid": {
         "title": "SIXID",

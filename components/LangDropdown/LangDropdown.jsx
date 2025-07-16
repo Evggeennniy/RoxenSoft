@@ -4,7 +4,8 @@ import { Link } from "@/i18n/navigation";
 import { useRouter, usePathname } from "next/navigation";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-
+import translateIcon from "../../public/assets/translate.svg";
+import Image from "next/image";
 const languages = [
   { code: "en", labelKey: "language.english" },
   { code: "ru", labelKey: "language.russian" },
@@ -39,13 +40,19 @@ export default function LanguageDropdown() {
     <li className="nav-item submenu" onMouseLeave={() => setOpen(false)}>
       <Link
         href="#"
-        className="nav-link"
+        className="nav-link "
         onClick={(e) => {
           e.preventDefault();
           setOpen((o) => !o);
         }}
       >
-        {t("label")}:{" "}
+        <Image
+          width={20}
+          height={20}
+          alt="Translate Icon"
+          className="translate-icon"
+          src={translateIcon}
+        />{" "}
         {languages.find((l) => l.code === currentLang)
           ? t(languages.find((l) => l.code === currentLang).labelKey)
           : currentLang}
