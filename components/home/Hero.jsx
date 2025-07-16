@@ -8,11 +8,13 @@ import shironIcon from "../../public/assets/shiron.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import JumperLink from "./ui/JumperLink";
+
 function Hero() {
   const t = useTranslations("Hero");
 
   return (
-    <div className="hero">
+    <div id="hero" className="hero">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
@@ -27,18 +29,19 @@ function Hero() {
               </div>
 
               <div className="hero-btn wow fadeInUp" data-wow-delay="0.4s">
-                <a
-                  href="https://t.me/roxensoft_ua"
+                <JumperLink
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-default btn-highlighted"
+                  targetId="contact-form"
                 >
                   {t("buttons.submitRequest")}
-                </a>
+                </JumperLink>
                 <div className="d-flex gap-2">
                   <div className="d-flex gap-2">
                     <a
-                      href="https://wa.me/380732001611"
+                      href="https://wa.me/+359885769651"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-default btn-default__social"
@@ -46,7 +49,7 @@ function Hero() {
                       <Image width={20} src={whatsAppIcon} alt="WhatsApp" />
                     </a>
                     <a
-                      href="https://t.me/roxensoft_ua"
+                      href="https://t.me/yevhenii_rox"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-default btn-default__social"

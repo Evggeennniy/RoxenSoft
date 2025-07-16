@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import logo from "../../public/assets/images/logo.svg";
+import Jumper from "@/features/ux/jumper";
 
 function Header() {
   const t = useTranslations("Header");
@@ -22,58 +23,91 @@ function Header() {
               <div className="nav-menu-wrapper">
                 <ul className="navbar-nav mr-auto" id="menu">
                   <li className="nav-item ">
-                    <Link className="nav-link" href="/">
+                    <Link
+                      className="nav-link"
+                      href="/#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        Jumper("hero", "start");
+                      }}
+                    >
                       {t("main")}
                     </Link>
-                    {/* <ul>
-                      <li className="nav-item">
-                        <Link className="nav-link" href="index.html">
-                          {t("mainVariants.homeMain")}
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" href="index-image.html">
-                          {t("mainVariants.homeImage")}
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" href="index-video.html">
-                          {t("mainVariants.homeVideo")}
-                        </Link>
-                      </li>
-                    </ul> */}
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/#services">
-                      {t("services")}
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="/#about">
+                    <Link
+                      className="nav-link "
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        Jumper("about", "center");
+                      }}
+                    >
                       {t("aboutUs")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/#portfolio">
+                    <Link
+                      className="nav-link"
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        Jumper("services", "center");
+                      }}
+                    >
+                      {t("services")}
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        Jumper("portfolio", "start");
+                      }}
+                    >
                       {t("portfolio")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="#faq">
-                      {t("faq")}
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link" href="#contacts">
+                    <Link
+                      className="nav-link"
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        Jumper("contacts", "center");
+                      }}
+                    >
                       {t("contacts")}
                     </Link>
                   </li>
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link"
+                      href="#"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        Jumper("faq", "center");
+                      }}
+                    >
+                      {t("faq")}
+                    </Link>
+                  </li>
+
                   <LanguageDropdown />
                 </ul>
               </div>
 
               <div className="header-btn">
-                <Link href="#" className="btn-default">
+                <Link
+                  href="#"
+                  className="btn-default"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    Jumper("contact-form", "center");
+                  }}
+                >
                   {t("consultation")}
                 </Link>
               </div>

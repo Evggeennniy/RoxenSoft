@@ -8,10 +8,8 @@ import Projects from "@/components/home/Projects";
 
 import React from "react";
 
-import Footer from "@/components/home/Footer";
 import CtaBox from "@/components/home/CtaBox";
 import Review from "@/components/home/Review";
-import Preloader from "@/components/home/Preloader";
 import Form from "@/components/home/Form";
 import FAQ from "@/components/home/FAQ";
 function HomePage(props) {

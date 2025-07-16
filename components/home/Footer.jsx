@@ -12,13 +12,13 @@ function Footer(props) {
         <div className="row justify-content-center text-center">
           <div className="col-lg-12">
             <div className="about-footer">
-              <div className="footer-logo mb-3">
+              <div className="footer-logo mb-4">
                 <Image src={logo} alt="Footer Logo" />
               </div>
 
-              <div className="d-flex justify-content-center gap-2 mb-3">
+              <div className="d-flex justify-content-center gap-4 mb-4 opacity-50">
                 <a
-                  href="https://wa.me/380732001611"
+                  href="https://wa.me/+359885769651"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-default btn-default__social"
@@ -26,7 +26,7 @@ function Footer(props) {
                   <Image width={20} src={whatsAppIcon} alt="WhatsApp" />
                 </a>
                 <a
-                  href="https://t.me/roxensoft_ua"
+                  href="https://t.me/yevhenii_rox"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-default btn-default__social"

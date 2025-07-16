@@ -46,7 +46,7 @@ function Form() {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const validationErrors = validate();
@@ -59,19 +59,56 @@ function Form() {
     setErrors({});
     setSubmitStatus(t("status.sending"));
 
-    setTimeout(() => {
-      setSubmitStatus(t("status.success"));
-      setFormData({
-        fname: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-    }, 1500);
+    try {
+      // Получаем IP и геолокацию
+      const geoRes = await fetch("https://ipapi.co/json/");
+      const geoData = await geoRes.json();
+
+      const ip = geoData.ip || "Unknown";
+      const country = geoData.country_name || "Unknown Country";
+      const city = geoData.city || "Unknown City";
+
+      const message = `
+Name: ${formData.fname}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}
+
+🌍 Location:
+IP: ${ip}
+From Where: ${country}, ${city}
+    `;
+
+      const tgRes = await fetch(
+        `https://api.telegram.org/bot${
+          process.env.NEXT_PUBLIC_API_BOT_TOKEN
+        }/sendMessage?chat_id=${
+          process.env.NEXT_PUBLIC_CHAT_ID
+        }&text=${encodeURIComponent(message)}`
+      );
+
+      if (tgRes.ok) {
+        setTimeout(() => {
+          setSubmitStatus(t("status.success"));
+        }, 1500);
+
+        setFormData({
+          fname: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus(t("status.error"));
+      }
+    } catch (error) {
+      console.error("Submit error:", error);
+      setSubmitStatus(t("status.error"));
+    }
   };
 
   return (
-    <div className="page-contact-us">
+    <div id="contact-form" className="page-contact-us">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

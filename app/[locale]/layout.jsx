@@ -2,15 +2,14 @@ import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { getMessages } from "next-intl/server";
-import Script from "next/script";
-import Preloader from "@/components/home/Preloader";
+// import Preloader from "@/components/home/Preloader";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/home/Footer";
 
 import DynamicScriptsLoader from "@/components/DynamicScriptsLoader";
 
 export const metadata = {
-  title: "Nextmind - AI Agency & Technology HTML Template",
+  title: "RoxenSoft | Technology Agency ",
   description: "",
   keywords: "",
 };
@@ -66,7 +65,6 @@ export default async function RootLayout({ children, params }) {
       </head>
       <body>
         <NextIntlClientProvider locale={locale}>
-          <Preloader />
           <Header />
           {children}
           <Footer />

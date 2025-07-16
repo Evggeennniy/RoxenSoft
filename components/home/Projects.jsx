@@ -12,7 +12,7 @@ function Projects(props) {
       <div className="container-fluid">
         <div className="row section-row">
           <div className="col-lg-12">
-            <div className="section-title section-title-center">
+            <div className="section-title mt-5 section-title-center">
               <h3 className="wow fadeInUp">Наши проекты</h3>
               <h2
                 className="wow fadeInUp"

@@ -1,10 +1,10 @@
-// components/DynamicScriptsLoader.jsx
 "use client";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import counterUp from "counterup2";
-import loader from "../public/assets/images/loader.svg";
+import roxPreloader from "../public/assets/preloader-logo.png";
 import Image from "next/image";
+
 const pluginScripts = [
   "/js/jquery-3.7.1.min.js",
   "/js/jquery.waypoints.min.js",
@@ -203,7 +203,7 @@ export default function DynamicScriptsLoader() {
           <div className="loading-container">
             <div className="loading"></div>
             <div id="loading-icon">
-              <Image src={loader} alt="loader" width={50} height={50} />
+              <Image src={roxPreloader} alt="loader" width={100} height={80} />
             </div>
           </div>
         </div>

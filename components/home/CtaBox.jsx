@@ -3,6 +3,9 @@ import tgIcon from "../../public/assets/hugeicons_telegram.svg";
 import whatsAppIcon from "../../public/assets/whatsApp.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+
+import JumperLink from "./ui/JumperLink";
+
 function CtaBox() {
   const t = useTranslations("CtaBox");
 
@@ -31,16 +34,17 @@ function CtaBox() {
                   className="cta-box-body wow fadeInUp"
                   data-wow-delay="0.6s"
                 >
-                  <a
-                    href="https://t.me/roxensoft_ua"
+                  <JumperLink
+                    href="/#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-default btn-highlighted"
+                    targetId="contact-form"
                   >
                     {t("btnPrimary")}
-                  </a>
+                  </JumperLink>
                   <a
-                    href="https://wa.me/380732001611"
+                    href="https://wa.me/+359885769651"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-default btn-default__social"
@@ -48,7 +52,7 @@ function CtaBox() {
                     <Image width={20} src={whatsAppIcon} alt="WhatsApp" />
                   </a>
                   <a
-                    href="https://t.me/roxensoft_ua"
+                    href="https://t.me/yevhenii_rox"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-default btn-default__social"
