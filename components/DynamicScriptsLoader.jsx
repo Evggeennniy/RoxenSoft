@@ -22,6 +22,7 @@ const pluginScripts = [
   "/js/jquery.mb.YTPlayer.min.js",
   "/js/wow.min.js",
   "/js/function.js",
+  "/js/custom/jumpers.js",
 ];
 // Новый инициализатор CounterUp2
 function initCounterUp2() {

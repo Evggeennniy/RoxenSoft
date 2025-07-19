@@ -7,8 +7,7 @@ import sixidIcon from "../../public/assets/sixid.svg";
 import shironIcon from "../../public/assets/shiron.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-
-import JumperLink from "./ui/JumperLink";
+import { Link } from "@/i18n/navigation";
 
 function Hero() {
   const t = useTranslations("Hero");
@@ -29,15 +28,14 @@ function Hero() {
               </div>
 
               <div className="hero-btn wow fadeInUp" data-wow-delay="0.4s">
-                <JumperLink
-                  href="#"
+                <Link
+                  href="%contact-form_center"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-default btn-highlighted"
-                  targetId="contact-form"
                 >
                   {t("buttons.submitRequest")}
-                </JumperLink>
+                </Link>
                 <div className="d-flex gap-2">
                   <div className="d-flex gap-2">
                     <a

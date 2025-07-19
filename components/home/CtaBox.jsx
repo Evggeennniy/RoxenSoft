@@ -2,9 +2,8 @@ import React from "react";
 import tgIcon from "../../public/assets/hugeicons_telegram.svg";
 import whatsAppIcon from "../../public/assets/whatsApp.svg";
 import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-
-import JumperLink from "./ui/JumperLink";
 
 function CtaBox() {
   const t = useTranslations("CtaBox");
@@ -34,15 +33,14 @@ function CtaBox() {
                   className="cta-box-body wow fadeInUp"
                   data-wow-delay="0.6s"
                 >
-                  <JumperLink
-                    href="/#"
+                  <Link
+                    href="%contact-form_center"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-default btn-highlighted"
-                    targetId="contact-form"
                   >
                     {t("btnPrimary")}
-                  </JumperLink>
+                  </Link>
                   <a
                     href="https://wa.me/+359885769651"
                     target="_blank"

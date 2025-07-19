@@ -26,6 +26,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html>
       <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"

@@ -5,7 +5,6 @@ import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import logo from "../../public/assets/images/logo.svg";
-import Jumper from "@/features/ux/jumper";
 
 function Header() {
   const t = useTranslations("Header");
@@ -23,74 +22,32 @@ function Header() {
               <div className="nav-menu-wrapper">
                 <ul className="navbar-nav mr-auto" id="menu">
                   <li className="nav-item ">
-                    <Link
-                      className="nav-link"
-                      href="/#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Jumper("hero", "start");
-                      }}
-                    >
+                    <Link className="nav-link" href="%hero_start">
                       {t("main")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link "
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Jumper("about", "center");
-                      }}
-                    >
+                    <Link className="nav-link" href="%about_center">
                       {t("aboutUs")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Jumper("services", "center");
-                      }}
-                    >
+                    <Link className="nav-link" href="%services_center">
                       {t("services")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Jumper("portfolio", "start");
-                      }}
-                    >
+                    <Link className="nav-link" href="%portfolio_start">
                       {t("portfolio")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Jumper("contacts", "center");
-                      }}
-                    >
+                    <Link className="nav-link" href="%contacts_center">
                       {t("contacts")}
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link"
-                      href="#"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        Jumper("faq", "center");
-                      }}
-                    >
+                    <Link className="nav-link" href="%faq_center">
                       {t("faq")}
                     </Link>
                   </li>
@@ -100,14 +57,7 @@ function Header() {
               </div>
 
               <div className="header-btn">
-                <Link
-                  href="#"
-                  className="btn-default"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    Jumper("contact-form", "center");
-                  }}
-                >
+                <Link href="%contact-form_center" className="btn-default">
                   {t("consultation")}
                 </Link>
               </div>
