@@ -23,6 +23,7 @@ const pluginScripts = [
   "/js/wow.min.js",
   "/js/function.js",
   "/js/custom/jumpers.js",
+  "/js/custom/language-link.js",
 ];
 // Новый инициализатор CounterUp2
 function initCounterUp2() {

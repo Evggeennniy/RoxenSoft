@@ -18,6 +18,7 @@ export default function LanguageDropdown() {
   const router = useRouter();
   const pathname = usePathname();
 
+  // Temporary hook !!!
   useEffect(() => {
     const locale = pathname.split("/")[1];
     const lang = languages.find((lang) => lang.code === locale);
@@ -39,16 +40,7 @@ export default function LanguageDropdown() {
       <ul>
         {languages.map(({ code, title }) => (
           <li className="nav-item" key={code}>
-            <Link
-              href="#"
-              className="nav-link"
-              onClick={(e) => {
-                e.preventDefault();
-                const newPath = pathname.replace(currentLang.code, code);
-                router.push(newPath);
-                setCurrentLang({ code, title });
-              }}
-            >
+            <Link href={`/${code}`} className="nav-link lang-link">
               {title}
             </Link>
           </li>
