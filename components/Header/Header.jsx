@@ -5,10 +5,15 @@ import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import logo from "../../public/assets/images/logo.svg";
+import { usePathname } from "next/navigation";
 
 function Header() {
   const t = useTranslations("Header");
+  const pathname = usePathname();
 
+  const hideHeader = pathname.includes("/project-details");
+
+  if (hideHeader) return null;
   return (
     <header className="main-header">
       <div className="header-sticky">

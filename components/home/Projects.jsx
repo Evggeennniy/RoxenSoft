@@ -5,22 +5,24 @@ import valaga_project from "../../public/assets/valaga.png";
 import call_center_project from "../../public/assets/call-center.png";
 import kart_project from "../../public/assets/kart.png";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function Projects(props) {
+  const t = useTranslations("Projects");
   return (
     <div id="portfolio" className="our-projects">
       <div className="container-fluid">
         <div className="row section-row">
           <div className="col-lg-12">
             <div className="section-title mt-5 section-title-center">
-              <h3 className="wow fadeInUp">Наши проекты</h3>
+              <h3 className="wow fadeInUp">{t("title")}</h3>
               <h2
                 className="wow fadeInUp"
                 data-wow-delay="0.2s"
                 data-cursor="-opaque"
               >
-                Настоящие задачи. Конкретный результат. <br />
-                Технологии <span>с интеллектом</span>
+                {t("subtitle.part1")} <br />
+                {t("subtitle.part2")} <span>{t("subtitle.intelligence")}</span>
               </h2>
             </div>
           </div>
@@ -32,7 +34,7 @@ function Projects(props) {
               <div className="project-image">
                 <a href="/project-details/sixid" data-cursor-text="View">
                   <figure className="image-anime">
-                    <Image src={sixid_project} alt="sixid_project" />
+                    <Image src={sixid_project} alt="Sixid Project" />
                   </figure>
                 </a>
               </div>
@@ -40,11 +42,11 @@ function Projects(props) {
                 <h3>
                   <a href="/project-details/sixid">Sixid</a>
                 </h3>
-                <p>Экосистема продуктивности</p>
+                <p>{t("projects.sixid")}</p>
               </div>
               <div className="project-btn">
                 <a href="/project-details/sixid">
-                  <Image src={arrowWhite} alt=" arrow White" />
+                  <Image src={arrowWhite} alt="Arrow White" />
                 </a>
               </div>
             </div>
@@ -55,7 +57,7 @@ function Projects(props) {
               <div className="project-image">
                 <a href="/project-details/valaga" data-cursor-text="View">
                   <figure className="image-anime">
-                    <Image src={valaga_project} alt="valaga_project" />
+                    <Image src={valaga_project} alt="Valaga Project" />
                   </figure>
                 </a>
               </div>
@@ -63,11 +65,11 @@ function Projects(props) {
                 <h3>
                   <a href="/project-details/valaga">VALAGA</a>
                 </h3>
-                <p>Каталог проф. мебели</p>
+                <p>{t("projects.valaga")}</p>
               </div>
               <div className="project-btn">
                 <a href="/project-details/valaga">
-                  <Image src={arrowWhite} alt=" arrow White" />
+                  <Image src={arrowWhite} alt="Arrow White" />
                 </a>
               </div>
             </div>
@@ -80,8 +82,8 @@ function Projects(props) {
                   <figure className="image-anime">
                     <Image
                       src={call_center_project}
+                      alt="Call Center Project"
                       width={500}
-                      alt="call_center_project"
                     />
                   </figure>
                 </a>
@@ -90,11 +92,11 @@ function Projects(props) {
                 <h3>
                   <a href="/project-details/call-center">Call Center</a>
                 </h3>
-                <p>Data Analytics</p>
+                <p>{t("projects.callcenter")}</p>
               </div>
               <div className="project-btn">
                 <a href="/project-details/call-center">
-                  <Image src={arrowWhite} alt=" arrow White" />
+                  <Image src={arrowWhite} alt="Arrow White" />
                 </a>
               </div>
             </div>
@@ -105,7 +107,7 @@ function Projects(props) {
               <div className="project-image">
                 <a href="/project-details/KART" data-cursor-text="View">
                   <figure className="image-anime">
-                    <Image src={kart_project} alt="kart project" />
+                    <Image src={kart_project} alt="KART Project" />
                   </figure>
                 </a>
               </div>
@@ -113,11 +115,11 @@ function Projects(props) {
                 <h3>
                   <a href="/project-details/KART">KART DE</a>
                 </h3>
-                <p>Data Analytics</p>
+                <p>{t("projects.kart")}</p>
               </div>
               <div className="project-btn">
                 <a href="/project-details/KART">
-                  <Image src={arrowWhite} alt=" arrow White" />
+                  <Image src={arrowWhite} alt="Arrow White" />
                 </a>
               </div>
             </div>

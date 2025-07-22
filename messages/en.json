@@ -392,5 +392,19 @@
         ]
       }
     }
+  },
+  "Projects": {
+    "title": "Our Projects",
+    "subtitle": {
+      "part1": "Real tasks. Tangible results.",
+      "part2": "Technology",
+      "intelligence": "with intelligence"
+    },
+    "projects": {
+      "sixid": "Productivity Ecosystem",
+      "valaga": "Professional Furniture Catalog",
+      "callcenter": "Data Analytics",
+      "kart": "Data Analytics"
+    }
   }
 }
